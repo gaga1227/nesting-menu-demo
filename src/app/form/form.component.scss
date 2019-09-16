@@ -1,0 +1,36 @@
+.form-input {
+  label {
+    span {
+      font-weight: 600;
+      display: block;
+      margin: 8px 0;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.form-btn-group {
+  text-align: right;
+
+  > button {
+    margin: 0 4px;
+    padding: 16px 32px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.form-input,
+.form-btn-group {
+  margin: 16px 0;
+}

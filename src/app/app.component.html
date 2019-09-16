@@ -1,0 +1,28 @@
+<div class="section section--header">
+  <h1 class="heading">Nesting Menu Demo</h1>
+  <h3>Instructions:</h3>
+  <ol class="instructions">
+    <li>A menu of six is displayed at start</li>
+    <li><b>'Nested Menu'</b> button will display a nested menu in menu section</li>
+    <li><b>'Form'</b> button will display a form in content section</li>
+    <li><b>'Not Implemented'</b> button will display a message in content section</li>
+    <li>Menus data is hard-coded with three nested levels for demo purposes</li>
+  </ol>
+</div>
+
+<div class="section section--menus">
+  <h2>Menu</h2>
+  <app-menus [menus]="menus"></app-menus>
+</div>
+
+<div class="section section--content">
+  <h2>Content</h2>
+
+  <app-form
+    *ngIf="displayForm"
+    (formCancel)="onFormCancelClick()"></app-form>
+
+  <app-message
+    *ngIf="displayMessage"
+    [message]="'Sorry, feature is not yet implemented.'"></app-message>
+</div>

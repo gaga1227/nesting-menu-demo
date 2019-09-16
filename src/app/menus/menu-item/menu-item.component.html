@@ -1,0 +1,8 @@
+<button
+  (click)="onMenuItemClick()">
+  {{item.title}}
+</button>
+
+<app-menus
+  *ngIf="displaySubmenu"
+  [menus]="item.submenuData"></app-menus>

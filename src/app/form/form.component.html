@@ -1,0 +1,18 @@
+<form>
+  <div class="form-input">
+    <label>
+      <span>Name</span>
+      <input type="text" name="name" placeholder="e.g. John Smith"/>
+    </label>
+  </div>
+  <div class="form-input">
+    <label>
+      <span>Age</span>
+      <input type="text" name="age" placeholder="e.g. 36"/>
+    </label>
+  </div>
+  <div class="form-btn-group">
+    <button (click)="onFormCancel($event)">Cancel</button>
+    <button (click)="onFormSubmit($event)" type="submit">Submit</button>
+  </div>
+</form>
